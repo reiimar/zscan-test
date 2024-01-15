@@ -46,13 +46,13 @@ jobs:
       timeout-minutes: 60
       with:
         # REPLACE: Zimperium Client Environment Name
-        client_env: https://zc202.zimperium.com/login
+        client_env:  https://zc202.zimperium.com/login
         # REPLACE: Zimperium Client ID
-        client_id: yiMcXoPvRvST8A0ocEDh4w
-        # REPLACE: Zimperium Client Secret
-        client_secret: ${{ secrets.ZSCAN_CLIENT_SECRET }}
+        client_id:  yiMcXoPvRvST8A0ocEDh4w
+        # REPLACE:  Zimperium Client Secret
+        client_secret:  ${{ secrets.ZSCAN_CLIENT_SECRET }}
         # REPLACE: The path to an .ipa or .apk
-        app_file: ./my-boy_2.0.6-an1.com.apk
+        app_file:  ./my-boy_2.0.6-an1.com.apk
 
     - name: Upload SARIF file
       uses: github/codeql-action/upload-sarif@v2
