@@ -52,7 +52,7 @@ jobs:
         # REPLACE: Zimperium Client Secret
         client_secret: ${{ secrets.ZSCAN_CLIENT_SECRET }}
         # REPLACE: The path to an .ipa or .apk
-        app_file: ${{ my-boy_2.0.6-an1.com.apk }} 
+        app_file: ./my-boy_2.0.6-an1.com.apk
 
     - name: Upload SARIF file
       uses: github/codeql-action/upload-sarif@v2
